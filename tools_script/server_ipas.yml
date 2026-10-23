@@ -1,0 +1,9 @@
+version: '3'
+services:
+  python:
+    image: python:3.9
+    restart: always
+    volumes:
+      - ~/ipas:/ipas
+    command: ["python", "-m", "http.server", "4749", "--directory", "/ipas"]
+    network_mode: "host"

@@ -1,0 +1,9 @@
+version: '3'
+services:
+  python:
+    image: python:3.9
+    restart: always
+    volumes:
+      - ~/apks:/apks
+    command: ["python", "-m", "http.server", "4748", "--directory", "/apks"]
+    network_mode: "host"
