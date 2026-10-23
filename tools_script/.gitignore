@@ -1,0 +1,10 @@
+# Runtime logs/state produced on the device-farm PC — not source code
+*.log
+logs/
+log_usb.txt
+count_check.txt
+redeploy_expected_devices.txt
+qa_metabase_alert/check_qa_metabase_log.json
+stf_alert/device_info.json
+.env
+!.env.gpg
